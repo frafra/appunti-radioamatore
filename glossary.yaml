@@ -1,0 +1,75 @@
+circuito:
+  short: circuito
+  plural: circuiti
+  long: krets
+  longplural: kretser
+tensione:
+  short: tensione
+  plural: tensioni
+  long: spenning
+  longplural: spenninger
+corrente:
+  short: corrente
+  plural: correnti
+  long: strøm
+  longplural: strømmer
+carica:
+  short: carica
+  plural: cariche
+  long: ladning
+  longplural: ladninger
+resistore:
+  short: resistore
+  plural: resistori
+  long: motstand
+  longplural: motstander
+resistenza:
+  short: resistenza
+  plural: resistenze
+  long: resistans
+  longplural: resistanser
+condensatore:
+  short: condensatore
+  plural: condensatori
+  long: kondensator
+  longplural: kondensatorer
+capacita:
+  short: capacità
+  plural: capacità
+  long: kapasitans
+  longplural: kapasitanser
+induttore:
+  short: induttore
+  plural: induttori
+  long: spole
+  longplural: spoler
+induttanza:
+  short: induttanza
+  plural: induttanze
+  long: induktans
+  longplural: induktanser
+alimentatore:
+  short: alimentatore
+  plural: alimentatori
+  long: strømforsyning
+  longplural: strømforsyninger
+trasformatore:
+  short: trasformatore
+  plural: trasformatori
+  long: transformator
+  longplural: transformatorer
+diodo:
+  short: diodo
+  plural: diodi
+  long: diode
+  longplural: dioder
+transistore:
+  short: transistor
+  plural: transistor
+  long: transistor
+  longplural: transistorer
+antenna:
+  short: antenna
+  plural: antenne
+  long: antenne
+  longplural: antenner
