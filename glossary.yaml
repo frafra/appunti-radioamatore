@@ -13,6 +13,9 @@ corrente:
   plural: correnti
   long: strøm
   longplural: strømmer
+potenza:
+  short: potenza
+  long: effekt
 carica:
   short: carica
   plural: cariche
