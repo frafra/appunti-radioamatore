@@ -3,6 +3,41 @@ circuito:
   plural: circuiti
   long: krets
   longplural: kretser
+schema_circuitale:
+  short: schema circuitale
+  plural: schemi circuitali
+  long: kretsskjema
+  longplural: kretsskjemaer
+componente:
+  short: componente
+  plural: componenti
+  long: komponent
+  longplural: komponenter
+conduttore:
+  short: conduttore
+  plural: conduttori
+  long: leder
+  longplural: ledere
+nodo:
+  short: nodo
+  plural: nodi
+  long: knutepunkt
+  longplural: knutepunkter
+maglia:
+  short: maglia
+  plural: maglie
+  long: sløyfe
+  longplural: sløyfer
+collegamento_in_serie:
+  short: collegamento in serie
+  plural: collegamenti in serie
+  long: seriekobling
+  longplural: seriekoblinger
+collegamento_in_parallelo:
+  short: collegamento in parallelo
+  plural: collegamenti in parallelo
+  long: parallellkobling
+  longplural: parallellkoblinger
 tensione:
   short: tensione
   plural: tensioni
@@ -51,6 +86,16 @@ induttanza:
   plural: induttanze
   long: induktans
   longplural: induktanser
+flusso_magnetico:
+  short: flusso magnetico
+  plural: flussi magnetici
+  long: magnetisk fluks
+  longplural: magnetiske flukser
+flusso_concatenato:
+  short: flusso magnetico concatenato
+  plural: flussi magnetici concatenati
+  long: flukskobling
+  longplural: flukskoblinger
 alimentatore:
   short: alimentatore
   plural: alimentatori
@@ -66,6 +111,11 @@ diodo:
   plural: diodi
   long: diode
   longplural: dioder
+led:
+  short: LED
+  plural: LED
+  long: lysdiode
+  longplural: lysdioder
 transistore:
   short: transistor
   plural: transistor
