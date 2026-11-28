@@ -19,7 +19,7 @@ L'energia si misura in joule (J) e il tempo in secondi (s). Nella tabella, $e$ i
   [@corrente], [I], [A, ampere], [$approx "6,24" dot 10^18 thin e \/ "s"$],
   [@carica], [Q], [C, coulomb], [$"A" dot "s"$],
   [@tensione], [U], [V, volt], [J/C],
-  [@flusso_concatenato], [$Psi$], [Wb, weber], [$"V" dot "s"$],
+  [@flusso_magnetico], [$Phi$], [Wb, weber], [$"V" dot "s"$],
   [@potenza], [P], [W, watt], [J/s],
   [@resistenza], [R], [Ω, ohm], [V/A],
   [@capacita], [C], [F, farad], [C/V],
@@ -30,6 +30,8 @@ La corrente $I$ è la quantità netta di carica elettrica che attraversa una sez
 
 La tensione $U$ tra due punti è la differenza di potenziale elettrico. Per una tensione positiva, il segno $+$ indica il punto a potenziale maggiore e il segno $-$ quello a potenziale minore. In un resistore la corrente scorre dal potenziale maggiore a quello minore. Quando si è iniziato a studiare l'elettricità non si sapeva che nei conduttori metallici la corrente fosse trasportata dagli elettroni, per cui si è scoperto solo in seguito che questi si muovono nel senso opposto rispetto al verso che era stato precedentemente definito per la corrente.
 Nelle soluzioni acquose, all’interno delle batterie e nei semiconduttori possono contribuire alla corrente anche altri portatori di carica, ma non è il caso di approfondire questi meccanismi ora.
+
+Il campo elettrico è prodotto dalle cariche elettriche, positive o negative. Le cariche in movimento producono anche un campo magnetico, che può agire sulle altre cariche in movimento. Un campo magnetico che varia nel tempo genera un campo elettrico indotto.
 
 Il mondo dei circuiti è pervaso di coppie di grandezze fisiche e componenti che sembrano gli uni lo specchio degli altri, come la tensione e la corrente, il condensatore e l'induttore, il campo elettrico e il campo magnetico. Nelle relazioni che li descrivono, gli elementi di queste coppie possono scambiarsi di ruolo. Questa corrispondenza prende il nome di dualità.
 
@@ -53,9 +55,15 @@ Un @condensatore è formato da due superfici conduttrici separate da un isolante
 
 Quando si applica una tensione $U$ ai suoi capi, sulle due superfici si accumulano cariche elettriche uguali in valore assoluto e di segno opposto, $+Q$ e $-Q$.
 
+Per una capacità $C$ costante, la tensione $U$ e la carica $Q$ sono legate dalla relazione:
+
 $ Q = C dot U $
 
-La corrente indica quanto rapidamente varia la carica accumulata. Quando la carica è costante, la corrente è zero.
+La corrente che attraversa il condensatore indica quanto rapidamente varia la carica accumulata. Quando la carica è costante, la corrente è zero.
+
+Il condensatore si oppone alle variazioni di tensione: per cambiare la tensione ai suoi capi occorre far passare corrente. Quando il valore assoluto della tensione aumenta, il campo elettrico si rafforza e accumula energia; quando diminuisce, il campo si indebolisce e restituisce energia al circuito. Il campo elettrico si può quindi immaginare come un serbatoio di energia che si riempie e si svuota.
+
+Un condensatore carico e scollegato conserva la carica: mantiene quindi una tensione e un campo elettrico, anche se non passa corrente. A tensione costante il condensatore equivale a un circuito aperto.
 
 === Induttore
 
@@ -63,13 +71,23 @@ La corrente indica quanto rapidamente varia la carica accumulata. Quando la cari
 
 Un @induttore è spesso realizzato con una bobina di filo conduttore, ed è caratterizzato da una propria induttanza $L$. L'induttore immagazzina energia nel campo magnetico.
 
-Ogni giro della bobina è chiamato spira. Il @flusso_magnetico attraverso ciascuna spira dipende dalla corrente e dai parametri costruttivi della bobina stessa (numero di spire, diametro, distanza tra le spire e materiale al suo interno). Sommando i flussi delle singole spire si ottiene il flusso concatenato $Psi$.
+Quando una corrente $I$ attraversa l'induttore, nella bobina si genera un campo magnetico. Se la corrente varia, varia anche il campo: il campo elettrico indotto agisce sugli elettroni della bobina stessa, contrastando la variazione della corrente. Questo fenomeno si chiama autoinduzione.
 
-Quando una corrente $I$ attraversa l'induttore, genera un flusso concatenato $Psi$ pari a:
+Ogni giro della bobina è chiamato spira. Il flusso magnetico $Phi$ misura quanto campo attraversa la superficie delimitata da una spira.
+
+Il @flusso_concatenato $Psi$ è il totale del flusso magnetico attraverso le spire dell'induttore, sommando il flusso attraverso ogni spira. Anch'esso si misura in weber.
+
+Per un'induttanza $L$ costante, la corrente $I$ e il flusso concatenato $Psi$ sono legati dalla relazione:
 
 $ Psi = L dot I $
 
 La tensione ai capi dell'induttore indica quanto rapidamente varia il flusso concatenato. Quando il flusso concatenato è costante, la tensione è zero.
+
+L'induttore si oppone alle variazioni di corrente: per cambiare la corrente che lo attraversa occorre applicare una tensione. Quando il valore assoluto della corrente aumenta, il campo magnetico si rafforza e accumula energia; quando diminuisce, il campo si indebolisce e restituisce energia al circuito. Il campo magnetico si può quindi immaginare come un serbatoio di energia che si riempie e si svuota.
+
+Un induttore ideale percorso da corrente costante mantiene un campo magnetico, anche se la tensione ai suoi capi è nulla. Applicando una tensione ai suoi capi, si modifica la corrente e con essa il campo magnetico.
+
+A corrente costante, l'induttore ideale equivale a un cortocircuito.
 
 === Altri
 
